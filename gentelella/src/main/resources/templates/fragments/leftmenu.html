@@ -31,17 +31,15 @@
 				<div class="menu_section">
 					<h3>General</h3>
 					<ul class="nav side-menu">
-						<li><a><i class="fa fa-home"></i> #기초 등록(??) <span
-								class="fa fa-chevron-down"></span></a>
+						<li><a><i class="fa fa-home"></i> #기초 등록(??) <span	class="fa fa-chevron-down"></span></a>
 							<ul class="nav child_menu">
-								<li><a href="">사업장 등록</a></li>
-								<li><a href="">품목 등록</a></li>
+								<li><a href="#">사업장 등록</a></li>
+								<li><a href="#">품목 등록</a></li>
 								<li><a th:href="@{addMember}">메뉴 등록</a></li>
-								<li><a href="">메뉴 레시피 등록</a></li>
+								<li><a href="#">메뉴 레시피 등록</a></li>
 							</ul>
 						</li>
-						<li><a><i class="fa fa-desktop"></i> #매장 관리(최영은)<span
-								class="fa fa-chevron-down"></span></a>
+						<li><a><i class="fa fa-desktop"></i> #매장 관리(최영은)<span	class="fa fa-chevron-down"></span></a>
 							<ul class="nav child_menu">							
 								<li><a>#사업장 관리<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
@@ -54,7 +52,7 @@
 								<li><a>#직원 관리<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
 										<li class="sub_menu">
-											<a href="#">직원등록</a>
+											<a href="#">직원 등록</a>
 										</li>
 										<li><a href="#">직원 조회</a></li>
 									</ul>
@@ -69,42 +67,41 @@
 								</li>
 							</ul>
 						</li>
-						<li><a><i class="fa fa-bar-chart-o"></i> #재고 관리(진우주) <span class="fa fa-chevron-down"></span></a>
+						<li><a><i class="fa fa-cubes"></i> #재고 관리(진우주) <span class="fa fa-chevron-down"></span></a>
 							<ul class="nav child_menu">
 								<li><a>#메뉴(상품) 관리<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
-										<li class="sub_menu"><a href="#">메뉴(상품) 등록</a></li>
-										<li class="sub_menu"><a href="#">메뉴(상품) 조회</a></li>
+										<li class="sub_menu"><a th:href="@{addmenu}">메뉴(상품) 등록</a></li>
+										<li class="sub_menu"><a th:href="@{getmenu}">메뉴(상품) 조회</a></li>
 									</ul>
 								</li>
 								<li><a>#메뉴(상품) 레시피 관리<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
-										<li class="sub_menu"><a href="#">메뉴(상품) 레시피 등록</a></li>
-										<li class="sub_menu"><a href="#">메뉴(상품) 레시피 조회</a></li>
+										<li class="sub_menu"><a th:href="@{addrecipy}">메뉴(상품) 레시피 등록</a></li>
+										<li class="sub_menu"><a th:href="@{getrecipy}">메뉴(상품) 레시피 조회</a></li>
 									</ul>
 								</li>
 								<li><a>#품목 관리<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
-										<li class="sub_menu"><a href="#">품목 등록</a></li>
-										<li class="sub_menu"><a href="#">품목 조회</a></li>
+										<li class="sub_menu"><a th:href="@{addarticle}">품목 등록</a></li>
+										<li class="sub_menu"><a th:href="@{getarticle}">품목 조회</a></li>
 									</ul>
 								</li>
 								<li><a>#재고 조사<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
-										<li class="sub_menu"><a href="#">재고 조사 내역 등록</a></li>
-										<li class="sub_menu"><a href="#">재고 조사 내역 조회</a></li>
+										<li class="sub_menu"><a th:href="@{addskk}">재고 조사 내역 등록</a></li>
+										<li class="sub_menu"><a th:href="@{getskk}">재고 조사 내역 조회</a></li>
 									</ul>
 								</li>
 								<li>
-									<a>#매입별 품목 재고 조회<span class="nav child_menu"></span></a>
+									<a th:href="@{getstock}">#매입별 품목 재고 조회<span class="nav child_menu"></span></a>
 								</li>
 								<li>
-									<a>#품목별 재고 총 수량 조회<span class="nav child_menu"></span></a>
+									<a th:href="@{gettotalstock}">#품목별 재고 총 수량 조회<span class="nav child_menu"></span></a>
 								</li>
 							</ul>
 						</li>
-						<li><a><i class="fa fa-table"></i> #급여 관리(백재영) <span
-								class="fa fa-chevron-down"></span></a>
+						<li><a><i class="fa fa-money"></i> #급여 관리(백재영) <span class="fa fa-chevron-down"></span></a>
 							<ul class="nav child_menu">
 								<li><a>#추가수당 관리<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
@@ -132,8 +129,7 @@
 								</li>
 							</ul>
 						</li>
-						<li><a><i class="fa fa-table"></i> #매입매출 관리(현진) <span
-								class="fa fa-chevron-down"></span></a>
+						<li><a><i class="fa fa-table"></i> #매입매출 관리(현진) <span	class="fa fa-chevron-down"></span></a>
 							<ul class="nav child_menu">
 								<li><a>#매입 관리<span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
