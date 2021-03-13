@@ -1,14 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
 	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	  layout:decorate="@{layout/default}">
 
 	<th:block layout:fragment="customTitle">
-		<title>메인화면</title>
+		<title>메뉴 수정</title>
 	</th:block>
 
 	<th:block layout:fragment="customContents">
-		잘나오네요 오나료오나료 asdfgdfdsfdsf
+
+
 	</th:block>
 
 </html>
